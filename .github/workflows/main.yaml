@@ -26,7 +26,7 @@ jobs:
         uses: VeryGoodOpenSource/very_good_coverage@v1.1.1
       
       - name: Build Apk
-        run: flutter build apk
+        run: flutter build apk -t lib/main_production.dart
         
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2.1.3
